@@ -12,10 +12,10 @@ Este microservicio tiene dos API's
    
 ## Ejemplo
 
-curl --location --request GET 'http://test.albo.mx/marvel/characters/capamerica'
-curl --location --request GET 'http://test.albo.mx/marvel/characters/ironman'
-curl --location --request GET 'http://test.albo.mx/marvel/colaborators/capamerica'
-curl --location --request GET 'http://test.albo.mx/marvel/colaborators/ironman'
+ - curl --location --request GET 'http://test.albo.mx/marvel/characters/capamerica'
+ - curl --location --request GET 'http://test.albo.mx/marvel/characters/ironman'
+ - curl --location --request GET 'http://test.albo.mx/marvel/colaborators/capamerica'
+ - curl --location --request GET 'http://test.albo.mx/marvel/colaborators/ironman'
    
 ## Importante considerar que cuando se levanta el aplicativo se hace el llamado a la API de Marvel, y se empieza a poblar la BD, por lo que hay que esperar por lo menos unos 3 minútos a que se llene la BD para lanzar peticiones.
 
