@@ -45,6 +45,8 @@ Para cambiar la frecuencia de llamado del corn, modificar el valor de la propied
 
 Para modificar en nivel de log, modificar el valor de la propiedad: logging.level.com.jvillanueva.albo.test en el archivo application.properties
 
+El servidor se ejecuta en el puerto 80, no confundir con el 8080
+
 Se necesita tener instalado:
 		
  - Java 1.8  		
