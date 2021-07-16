@@ -10,9 +10,16 @@ Este microservicio tiene dos API's
  - Se encarga de obtener todos los personajes con los que ha
    interactuado el héroe así como los comics de aparición.
    
+##Ejemplo
+
+curl --location --request GET 'http://test.albo.mx/marvel/characters/capamerica'
+curl --location --request GET 'http://test.albo.mx/marvel/characters/ironman'
+curl --location --request GET 'http://test.albo.mx/marvel/colaborators/capamerica'
+curl --location --request GET 'http://test.albo.mx/marvel/colaborators/ironman'
+   
 ## Importante considerar que cuando se levanta el aplicativo se hace el llamado a la API de Marvel, y se empieza a poblar la BD, por lo que hay que esperar por lo menos unos 3 minútos a que se llene la BD para lanzar peticiones.
 
-Se ejecuta un Cron cada 5 minútos que realiza el llamado a la Api de Marvel y realiza la actualización de la BD.
+Se ejecuta un Cron cada 7 minútos que realiza el llamado a la Api de Marvel y realiza la actualización de la BD.
 
 ## Versión 1.0
 
@@ -39,7 +46,7 @@ Se ejecuta un Cron cada 5 minútos que realiza el llamado a la Api de Marvel y r
  6. HEROS_COLABORATORS 				--Relación de heros/colaboradores
 
 Para ingresar a la consola de H2 puede ser medienta el siguiente enlace, una vez deplegado el proyecto.
-http://localhost:8080/h2-console
+http://localhost/h2-console
 user: sa
 password: (vacío)
 
