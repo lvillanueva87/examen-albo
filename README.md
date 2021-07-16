@@ -9,6 +9,8 @@ Este microservicio tiene dos API's
 ***/marvel/characters/{character}***
  - Se encarga de obtener todos los personajes con los que ha
    interactuado el héroe así como los comics de aparición.
+   
+## Importante considerar que cuando se levanta el aplicativo se hace el llamado a la API de Marvel, y se empieza a poblar la BD, por lo que hay que esperar por lo menos unos 3 minútos a que se llene la BD para lanzar peticiones.
 
 Se ejecuta un Cron cada 5 minútos que realiza el llamado a la Api de Marvel y realiza la actualización de la BD.
 
@@ -29,12 +31,12 @@ Se ejecuta un Cron cada 5 minútos que realiza el llamado a la Api de Marvel y r
 	-Tablas:
 		
 
- 1. HEROS 										--Almacena los héroes, de momento solo son Capitán América y Iron Man.
+ 1. HEROS 							--Almacena los héroes, de momento solo son Capitán América y Iron Man.
  2. COLABORATORS					--Almacena la información de los colaboradores que han participado en la creación de los comics de los héroes.
- 3. CHARACTERS 							--Almacena los personajes con los que los que los héroes antes mencionados han tenido interacción en los comics.
- 4. SYNC											--Almacena las fechas y horas de actualización del servicio.
- 5. HEROS_CHARACTERS 			--Relación de heroes/personajes
- 6. HEROS_COLABORATORS 	--Relación de heros/colaboradores
+ 3. CHARACTERS 						--Almacena los personajes con los que los que los héroes antes mencionados han tenido interacción en los comics.
+ 4. SYNC							--Almacena las fechas y horas de actualización del servicio.
+ 5. HEROS_CHARACTERS 				--Relación de heroes/personajes
+ 6. HEROS_COLABORATORS 				--Relación de heros/colaboradores
 
 Para ingresar a la consola de H2 puede ser medienta el siguiente enlace, una vez deplegado el proyecto.
 http://localhost:8080/h2-console
