@@ -10,7 +10,7 @@ Este microservicio tiene dos API's
  - Se encarga de obtener todos los personajes con los que ha
    interactuado el héroe así como los comics de aparición.
    
-##Ejemplo
+## Ejemplo
 
 curl --location --request GET 'http://test.albo.mx/marvel/characters/capamerica'
 curl --location --request GET 'http://test.albo.mx/marvel/characters/ironman'
